@@ -216,8 +216,8 @@ export default function ProjectsSection() {
                         <span className="text-card-foreground">{featuredProject.category}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-muted-foreground">Users:</span>
-                        <span className="text-card-foreground">500+</span>
+                        {/*<span className="text-muted-foreground">Users:</span>
+                        <span className="text-card-foreground">500+</span> */}
                       </div>
                     </div>
                   </div>
