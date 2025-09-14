@@ -75,8 +75,8 @@ export default function Navigation() {
                   onClick={() => scrollToSection(item.id)}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     activeSection === item.id
-                      ? "text-primary bg-primary/10"
-                      : "text-foreground hover:text-primary hover:bg-primary/5"
+                      ? "text-primary-foreground bg-primary"
+                      : "text-foreground hover:text-primary hover:bg-muted"
                   }`}
                 >
                   {item.label}
@@ -91,23 +91,23 @@ export default function Navigation() {
               onClick={handleResumeDownload}
               variant="outline"
               size="sm"
-              className="flex items-center gap-2 bg-transparent"
+              className="flex items-center gap-2 bg-background border-border hover:bg-muted"
             >
               <Download className="h-4 w-4" />
               Resume
             </Button>
             <div className="flex items-center space-x-2">
-              <Button variant="ghost" size="sm" asChild>
+              <Button variant="ghost" size="sm" className="hover:bg-muted" asChild>
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                   <Github className="h-4 w-4" />
                 </a>
               </Button>
-              <Button variant="ghost" size="sm" asChild>
+              <Button variant="ghost" size="sm" className="hover:bg-muted" asChild>
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-4 w-4" />
                 </a>
               </Button>
-              <Button variant="ghost" size="sm" asChild>
+              <Button variant="ghost" size="sm" className="hover:bg-muted" asChild>
                 <a href="mailto:jovan@example.com">
                   <Mail className="h-4 w-4" />
                 </a>
@@ -134,8 +134,8 @@ export default function Navigation() {
                 onClick={() => scrollToSection(item.id)}
                 className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors ${
                   activeSection === item.id
-                    ? "text-primary bg-primary/10"
-                    : "text-foreground hover:text-primary hover:bg-primary/5"
+                    ? "text-primary-foreground bg-primary"
+                    : "text-foreground hover:text-primary hover:bg-muted"
                 }`}
               >
                 {item.label}
@@ -146,23 +146,23 @@ export default function Navigation() {
                 onClick={handleResumeDownload}
                 variant="outline"
                 size="sm"
-                className="w-full mb-3 flex items-center justify-center gap-2 bg-transparent"
+                className="w-full mb-3 flex items-center justify-center gap-2 bg-background border-border hover:bg-muted"
               >
                 <Download className="h-4 w-4" />
                 Download Resume
               </Button>
               <div className="flex justify-center space-x-4">
-                <Button variant="ghost" size="sm" asChild>
+                <Button variant="ghost" size="sm" className="hover:bg-muted" asChild>
                   <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4" />
                   </a>
                 </Button>
-                <Button variant="ghost" size="sm" asChild>
+                <Button variant="ghost" size="sm" className="hover:bg-muted" asChild>
                   <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-4 w-4" />
                   </a>
                 </Button>
-                <Button variant="ghost" size="sm" asChild>
+                <Button variant="ghost" size="sm" className="hover:bg-muted" asChild>
                   <a href="mailto:jovan@example.com">
                     <Mail className="h-4 w-4" />
                   </a>

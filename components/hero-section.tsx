@@ -42,10 +42,7 @@ export default function HeroSection() {
         >
           {/* Main heading */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-balance mb-6">
-            Hi, I'm{" "}
-            <span className="text-primary bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Jovan
-            </span>
+            Hi, I'm <span className="text-primary">Jovan</span>
             <br />
             <span className="text-2xl sm:text-4xl lg:text-5xl text-muted-foreground font-normal">
               Engineering & Tech Enthusiast
@@ -71,7 +68,7 @@ export default function HeroSection() {
               onClick={() => scrollToSection("contact")}
               variant="outline"
               size="lg"
-              className="px-8 py-3 text-lg font-semibold transition-all hover:scale-105 bg-transparent"
+              className="px-8 py-3 text-lg font-semibold transition-all hover:scale-105 bg-background border-border hover:bg-muted"
             >
               <Mail className="mr-2 h-5 w-5" />
               Contact Me
@@ -80,7 +77,7 @@ export default function HeroSection() {
               onClick={() => scrollToSection("projects")}
               variant="ghost"
               size="lg"
-              className="px-8 py-3 text-lg font-semibold transition-all hover:scale-105 text-accent hover:text-accent"
+              className="px-8 py-3 text-lg font-semibold transition-all hover:scale-105 text-accent hover:text-accent hover:bg-muted"
             >
               <ExternalLink className="mr-2 h-5 w-5" />
               Explore Projects
@@ -91,7 +88,7 @@ export default function HeroSection() {
           <div className="animate-bounce">
             <button
               onClick={() => scrollToSection("about")}
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-foreground transition-colors"
               aria-label="Scroll to about section"
             >
               <ArrowDown className="h-6 w-6 mx-auto" />
