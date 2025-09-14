@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Github, Star, Users, Zap, Calculator, Gamepad2, Globe } from "lucide-react"
+import { ExternalLink, Github, Star, MapPin, Zap, Calculator, Gamepad2, Globe } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 export default function ProjectsSection() {
@@ -31,21 +31,21 @@ export default function ProjectsSection() {
   const featuredProject = {
     title: "LinkUp",
     description:
-      "A comprehensive platform connecting students with industry mentors and project opportunities, featuring an intuitive dashboard, interactive project listings, and intelligent mentor matching system.",
+      "A cross-platform mobile app that finds convenient midpoints for groups and suggests meetup locations with venue recommendations.",
     longDescription:
-      "LinkUp bridges the gap between academic learning and industry experience by creating meaningful connections between students and professionals. The platform features a user-friendly dashboard for both students and mentors, interactive project listings with detailed requirements, smart matching algorithms, and real-time notifications to keep users engaged.",
+      "LinkUp helps groups find the perfect meeting spot by calculating central locations and suggesting nearby social venues. The app intelligently recommends places based on group preferences and real-time data.",
     features: [
-      "User-friendly dashboard for students and mentors",
-      "Interactive project listings with detailed requirements",
-      "Intelligent mentor matching based on skills and interests",
-      "Real-time notifications and messaging system",
-      "Progress tracking and milestone management",
-      "Industry-specific project categories",
+      "Finds optimal meeting points for groups using geolocation",
+      "Suggests nearby social venues using Yelp Fusion API",
+      "Intelligent venue recommendations powered by OpenAI",
+      "Real-time collaboration features for group planning",
+      "Interactive maps with custom pins and directions",
+      "Secure user authentication and data sync"
     ],
-    techStack: ["HTML", "CSS", "JavaScript", "Python", "Database Management", "API Integration"],
-    status: "Live",
-    category: "Web Platform",
-    impact: "Connecting 500+ students with industry professionals",
+    techStack: ["React Native", "Expo", "Google Maps API", "Yelp Fusion API", "OpenAI API", "Firebase"],
+    status: "In Development",
+    category: "Mobile App",
+    impact: "Simplifying group meetup planning with smart location-based features"
   }
 
   const otherProjects = [
@@ -132,7 +132,7 @@ export default function ProjectsSection() {
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                 <div className="flex items-center gap-4">
                   <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center">
-                    <Users className="h-8 w-8 text-primary" />
+                    <MapPin className="h-8 w-8 text-primary" />
                   </div>
                   <div>
                     <div className="flex items-center gap-3 mb-2">
