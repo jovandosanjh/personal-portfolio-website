@@ -155,6 +155,7 @@ export default function ProjectsSection() {
                     </div>
                   </div>
                 </div>
+                {/* Commented out buttons for now
                 <div className="flex gap-3">
                   <Button className="bg-primary hover:bg-primary/90">
                     <ExternalLink className="h-4 w-4 mr-2" />
@@ -165,6 +166,7 @@ export default function ProjectsSection() {
                     View Code
                   </Button>
                 </div>
+                */}
               </div>
             </CardHeader>
             <CardContent>
