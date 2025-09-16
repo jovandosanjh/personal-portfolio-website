@@ -60,14 +60,8 @@ export default function ContactSection() {
     {
       icon: Mail,
       label: "Email",
-      value: "jovandosanjh@gmail.com",
-      href: "mailto:jovandosanjh@gmail.com",
-    },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+1 (226) 600-7456",
-      href: "tel:+12266007456",
+      value: "jovan.dosanjh@uwaterloo.ca",
+      href: "mailto:jovan.dosanjh@uwaterloo.ca",
     },
     {
       icon: MapPin,
