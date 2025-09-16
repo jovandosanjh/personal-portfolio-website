@@ -42,7 +42,7 @@ export default function AboutSection() {
     {
       icon: Lightbulb,
       title: "Innovation",
-      description: "Passionate about leveraggging technology to create innovative solutions for real-world challenges.",
+      description: "Passionate about leveraging technology to create innovative solutions for real-world challenges.",
     },
     {
       icon: Target,
