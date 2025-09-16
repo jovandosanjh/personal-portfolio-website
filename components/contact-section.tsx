@@ -53,24 +53,21 @@ export default function ContactSection() {
   }
 
   const handleResumeDownload = () => {
-    const link = document.createElement("a")
-    link.href = "/resume.pdf"
-    link.download = "Jovan_Resume.pdf"
-    link.click()
+    window.open("/Jovan_Dosanjh_Resume.pdf", "_blank");
   }
 
   const contactInfo = [
     {
       icon: Mail,
       label: "Email",
-      value: "jovan@example.com",
-      href: "mailto:jovan@example.com",
+      value: "jovandosanjh@gmail.com",
+      href: "mailto:jovandosanjh@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+1 (226) 600-7456",
+      href: "tel:+12266007456",
     },
     {
       icon: MapPin,
@@ -84,14 +81,14 @@ export default function ContactSection() {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
-      username: "@jovan",
+      href: "https://github.com/jovandosanjh",
+      username: "@jovandosanjh",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
-      username: "Jovan",
+      href: "https://linkedin.com/in/jovan-dosanjh",
+      username: "Jovan Dosanjh",
     },
   ]
 
